@@ -5,6 +5,6 @@ class Biblioteca < ApplicationRecord
 
   delegate :titulo, to: :jogo, prefix: false
 
-  validates :jogo_id, uniqueness: { scope: :usuario_id } 
+  validates :jogo_id, uniqueness: { scope: :usuario_id} 
 
 end
